@@ -61,7 +61,7 @@ $(document).ready(function () {
           if (moment().isAfter(hourDisplay, "minute")) {
               renderCalendar(); // upon entering the next hour, the calendar is re-rendered to display the correct color blocks. 
           }
-      }, 60000); //function occurs in one minute intervals.
+      }, 600000); //function occurs in ten minute intervals to clear all unsaved entries.
   };
 
   function storeCalendar() {  // stores calendar text/data in local storage.
