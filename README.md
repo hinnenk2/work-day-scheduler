@@ -36,6 +36,6 @@ https://hinnenk2.github.io/work-day-scheduler/
 
 ![nav-menu](/images/populated-workday.png "populate work list")
 
-### Click Clear button to reset schedule
+### Click the Clear button to reset schedule
 
 ![nav-menu](/images/cleared-workday.png "click-clear-button")

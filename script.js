@@ -2,9 +2,7 @@
 $(document).ready(function () {
 
   var currentDate = $("header #currentDay"); //calls a selector to display current date.
-
   var eventCal = {};  //declares an object for storing daily data
-
   var hourDisplay = moment(); //displays the current hour.
 
   function displayCal(today, eventCal) { //displays the calendar upon loading the page.
@@ -16,7 +14,6 @@ $(document).ready(function () {
       for (var i = 1; i < 10; i++) {  //for-loop is used to generate 9 rows for each hour from 9am to 5pm.
 
           var row = $("<div>").addClass("row"); //generates a new row per the given hour.
-          
           var hourClass = "";  // sets the color for the hour-display elements depending on whether the time-frame is in the past, present and future
           if (today.isBefore(rowHour, "hour")) { //displays as green.
               hourClass = "future"
@@ -77,8 +74,10 @@ $(document).ready(function () {
   $("button#clear-cal").on("click", calClear);  // Clears the calendar upon clicking.
 
   $(document).on("click", "button.saveBtn", function (event) {  //establishes Save button.
+
       var calText = event.currentTarget.parentElement.children[1].value; // store the data within each row.
       eventCal[event.currentTarget.id] = calText;
       storeCalendar(); // store the eventCal in local storage.
+      
   });
 });
