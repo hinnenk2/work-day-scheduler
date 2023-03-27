@@ -32,10 +32,10 @@ https://hinnenk2.github.io/work-day-scheduler/
 
 ### Usage Tips
 
-#### During business hours: 9AM-5PM current time, input work items into the work-day scheduler and click the Save function
+#### During business hours: 9AM-5PM current time, input work items into the work-day scheduler and click the Save button
 
 ![nav-menu](/images/populated-workday.png "populate work list")
 
-### Click CLear button to reset schedule
+### Click Clear button to reset schedule
 
 ![nav-menu](/images/cleared-workday.png "click-clear-button")
